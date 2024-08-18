@@ -1,0 +1,71 @@
+@font-face {
+    font-family: buttonFont;
+    src: url(./fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: displayFont;
+    src: url(./fonts/DS-DIGIT.TTF);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #394764;
+}
+
+#calc {
+    height: 40em;
+    width: 30em;
+    background-color: #242c43;
+    border-radius: 30px;
+    margin: 0 auto;
+    margin-top: 8em;
+    border: solid #182033;
+}
+
+#display {
+    display: flex;
+    height: 20%;
+    align-items: end;
+    justify-content: center;
+    background-color: #bccd95;
+    border: solid #182033;
+    border-radius: 15px;
+    margin: 40px;
+    overflow: hidden;
+}
+
+h1 {
+    padding: 10px;
+    width: 12em;
+    text-align: end;
+    font-size: 5em;;
+    font-family: displayFont;
+    color: #3b4621;
+    font-weight: 400;
+}
+
+#numpad {
+    display: grid;
+    margin: 50px 40px 40px 40px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    height: 350px;
+}
+
+.buttons {
+    background-color: #eae3db;
+    margin: 3px;
+    border-radius: 15px;
+    font-family: buttonFont;
+    font-size: 1.5em;
+    color: #4a4845;
+}
+
+#zero {
+    grid-column: 1 / 3;
+}
