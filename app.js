@@ -157,6 +157,10 @@ zeroBtn.onclick = () => {
 }
 
 equalBtn.onclick = () => {
-    eq = eval(eq);
-    displayEq();
+    try {
+        eq = eval(eq);
+        displayEq();
+    } catch(error) {
+        display.innerHTML = 'Error';
+    }
 }
